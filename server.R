@@ -24,6 +24,7 @@ function(input, output, session) {
       units = "secs"), units = "secs")
     message("check", r) 
     if (r > 5) {
+      shinyjs::runjs("window.setTimeout(window.close, 5000);")
       session$close()
     }
   })

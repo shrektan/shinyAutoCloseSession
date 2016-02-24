@@ -8,6 +8,7 @@
 library(shiny)
 
 tagList(
+  tags$head(shinyjs::useShinyjs()),
   fluidPage(
     
     # Application title
